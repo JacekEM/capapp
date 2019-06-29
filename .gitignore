@@ -142,3 +142,4 @@ secrets.yml
 
 
 src/main/java/resources/*
+src/main/resources/*

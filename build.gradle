@@ -32,7 +32,6 @@ dependencies {
     compile('org.springframework.boot:spring-boot-starter-web')
     compile group: 'org.xerial', name: 'sqlite-jdbc', version: '3.27.2.1'
     compile group: 'org.hibernate', name: 'hibernate-gradle-plugin', version: '5.4.3.Final'
-    compile('org.flywaydb:flyway-core')
     compile 'org.springframework.boot:spring-boot-starter-data-jpa'
     compile 'mysql:mysql-connector-java'
     testCompile('org.springframework.boot:spring-boot-starter-test')

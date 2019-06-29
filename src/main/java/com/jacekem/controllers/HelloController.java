@@ -1,4 +1,4 @@
-package com.jacekem;
+package com.jacekem.controllers;
 
 import com.jacekem.controllers.Greeter;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloController {
 
-    @RequestMapping("/")
+    @RequestMapping("/hello")
     public String index() {
 
     String f =
