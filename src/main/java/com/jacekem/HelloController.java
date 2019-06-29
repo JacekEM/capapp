@@ -10,9 +10,13 @@ public class HelloController {
     @RequestMapping("/")
     public String index() {
 
-    var f = "aaaaggfffdaa";
+    String f =
 
-        return f;
+            System.getProperty("java.version").toString();
+
+    String a = "3".repeat(2);
+
+        return a;
     }
 
 }
