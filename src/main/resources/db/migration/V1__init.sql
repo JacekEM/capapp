@@ -1,6 +1,6 @@
 
-CREATE TABLE aluno (
-  id bigint(20) NOT NULL AUTO_INCREMENT,
+CREATE TABLE alunos (
+  id integer(20) NOT NULL AUTO_INCREMENT,
   name varchar(20) NOT NULL,
   surname varchar(40) NOT NULL,
   apelido varchar(40) DEFAULT "brak",

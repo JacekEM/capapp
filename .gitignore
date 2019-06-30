@@ -145,6 +145,8 @@ secrets.yml
 
 !src/main/resources/
 src/main/resources/*
+src/main/resources/demo-application.properties
+
 
 !src/main/resources/db/
 !src/main/resources/db/migration/

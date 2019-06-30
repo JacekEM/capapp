@@ -12,11 +12,8 @@ import org.springframework.web.bind.annotation.*;
 public class AlunoController {
 
 
-
     @Autowired
     private AlunoRepository alunoRepository;
-
-
 
 
     @RequestMapping(value = "/add", method = RequestMethod.POST)
@@ -31,6 +28,8 @@ public class AlunoController {
         Aluno n = new Aluno();
         n.setName(name);
         n.setEmail(email);
+        n.setApelido(apelido);
+        n.setSurname(surname);
         alunoRepository.save(n);
         return "worked";
     }
