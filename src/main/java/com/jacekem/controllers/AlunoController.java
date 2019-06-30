@@ -11,14 +11,22 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping(path="/aluno")
 public class AlunoController {
 
+
+
     @Autowired
     private AlunoRepository alunoRepository;
 
 
-//    @GetMapping(path="/add")
+
+
     @RequestMapping(value = "/add", method = RequestMethod.POST)
     public @ResponseBody
-    String addNewUser (@RequestParam String name, @RequestParam String email) {
+    String addNewUser (@RequestParam String name,
+                       @RequestParam String surname,
+                       @RequestParam String email,
+                       @RequestParam String apelido
+
+                        ) {
 
         Aluno n = new Aluno();
         n.setName(name);

@@ -14,6 +14,7 @@ plugins {
     id 'org.springframework.boot' version '2.1.5.RELEASE'
     id 'io.spring.dependency-management' version '1.0.6.RELEASE'
     id 'com.sourcemuse.mongo' version '1.0.7'
+    id "org.flywaydb.flyway" version "5.2.4"
 }
 
 
@@ -34,7 +35,11 @@ dependencies {
     compile group: 'org.hibernate', name: 'hibernate-gradle-plugin', version: '5.4.3.Final'
     compile 'org.springframework.boot:spring-boot-starter-data-jpa'
     compile 'mysql:mysql-connector-java'
+    compile('org.flywaydb:flyway-core')
+    compile('org.springframework.boot:spring-boot-starter-jdbc')
+    compile group: 'org.hibernate', name: 'hibernate-annotations', version: '3.5.6-FINAL'
     testCompile('org.springframework.boot:spring-boot-starter-test')
+    
 
 
 }
