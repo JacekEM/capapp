@@ -141,7 +141,10 @@ secrets.yml
 .sts4-cache
 
 
-src/main/java/resources/*
+
+
+!src/main/resources/
 src/main/resources/*
+
+!src/main/resources/db/
 !src/main/resources/db/migration/
-!src/main/resources/db/migration/*
